@@ -14,19 +14,19 @@ let food = {
 
 
 function criarBG() {
-    context.fillStyle = "orange";
+    context.fillStyle = "#7bbb1c";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarCobra() {
     for(i=0; i < snake.length; i++){
-        context.fillStyle = "red";
+        context.fillStyle = "#08a015";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood() {
-    context.fillStyle = "green";
+    context.fillStyle = "red";
     context.fillRect(food.x, food.y, box, box);
 }
 
